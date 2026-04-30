@@ -1,0 +1,31 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #05223e, #10a6b1);
+}
+
+.layout{
+  background:linear-gradient(to right, #289f7c, #10a6b1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  color: #f0f2f5;
+
+}
+
+button{
+  font-size: 30px;
+  font-weight: bold;
+  background:white;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 50px;
+  font-size: large;
+ 
+} 
+
