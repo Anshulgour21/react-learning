@@ -8,21 +8,20 @@ const App = () => {
 
   const formsummit = (e) => {
     e.preventDefault()
-
     const copytask = [...task]
     copytask.push({ title, detailed })
     settask(copytask) 
-    console.log(task)  
+    console.log(task)  -
   }
-  const deletbtn = (idx) => {
-    const copytask = [...task];
+  const deletbtn = (idx) => { 
+    const copytask = [...task]; 
     copytask.splice(idx, 1) 
     settask(copytask) 
   }
   return (
     <div className='bg-black lg:flex text-white h-screen'>
       <form onSubmit={(e) => {
-        formsummit(e)
+        formsummit(e) 
       }}
         className='flex lg:w-1/2 gap-4 items-start p-10 flex-col'>
         <h1 className='font-bold text-4xl'>add notes</h1>
@@ -57,7 +56,7 @@ const App = () => {
             return (
               <div key={idx} className='bg-white h-40 flex justify-between  flex-col px-3 py-5   w-40  bg-cover p-4 rounded-xl '>
                 <h3 className='text-black leading-tight font-bold'>{Elem.title}</h3>
-                <p className='text-black mt-3 leading-tight '>{Elem.detailed}</p>
+                <p className='text-black mt-3 leading-tight '>{Elem.detailed}</p> 
                 <button onClick={() => { 
                   deletbtn(idx)
                 }}

@@ -11,7 +11,7 @@ else {
   } 
 return (
   <div onWheel={(elem) => {
-    scrolling(elem.deltaY)
+    scrolling(elem.deltaY) 
   }}>
     <div className='page1'></div>
     <div className='page2'></div>
